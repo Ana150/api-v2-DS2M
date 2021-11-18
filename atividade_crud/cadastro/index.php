@@ -1,5 +1,9 @@
 <?php
 include('../componentes/header.php');
+
+if (!isset($_SESSION["usuarioId"])) {
+    header("location: ../login/index.php");
+}
 ?>
 
 
@@ -26,6 +30,7 @@ include('../componentes/header.php');
         </div>
     </div>
 </div>
+
 
 
 <?php
